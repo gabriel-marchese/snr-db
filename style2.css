@@ -1,0 +1,51 @@
+:root{
+    --primary-color: #E1ADDC;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+h2{
+    justify-content: center;
+    display: grid;
+    flex-flow: column wrap;
+}
+
+.box{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 3px solid var(--primary-color);
+    height: 65vh;
+    margin-top: 3em;
+    border-radius: 10px;
+}
+
+legend{
+    border: 2px solid var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.foto img{
+    width: 60%;
+    border: 2px solid #E1ADDC;
+    border-radius: 8px;
+    height: 130px;
+}
+
+.header{
+    display: grid;
+    flex-flow: column wrap;
+    grid-template-columns: 0.4fr 2fr;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+p{
+    padding: 3em;
+}
