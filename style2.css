@@ -13,6 +13,18 @@ h2{
     flex-flow: column wrap;
 }
 
+.buscar{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2em;
+    border: 3px solid var(--primary-color);
+    height: 65vh;
+    margin-top: 3em;
+    border-radius: 10px;
+}
+
 .box{
     display: flex;
     flex-flow: column wrap;
