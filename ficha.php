@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form method="GET" action="ficha.html">
+    <form method="GET" action="config2.php">
         <div class="buscar">
             <input class="cpf_busca" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
             <button class="busca">Buscar</button>
