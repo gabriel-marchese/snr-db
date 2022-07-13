@@ -1,5 +1,6 @@
-<?php
 
+<?php
+/*
 if(!isset($_GET['busca'])){
     header("Location: ficha.php");
     exit;
@@ -22,5 +23,5 @@ $sth->execute();
 $resultados = $sth->fetchAll(PDO::FETCH_ASSOC);
 print_r($resultados);exit;
   
-
+*/
 ?>

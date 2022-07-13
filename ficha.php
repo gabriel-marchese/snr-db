@@ -1,3 +1,14 @@
+<?php
+
+    include('config.php');
+
+    $pesquisa = $conexao->real_escape_string($_GET['busca']);
+    $sql_code = "SELECT * FROM pacientes WHERE nome LIKE '%$pesquisa%' or cpf LIKE '%$pesquisa%'";
+    $sql_query = $conexao->query($sql_code) or die("Erro ao consultar" . $conexao->error); 
+    
+    
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -10,10 +21,30 @@
 </head>
 
 <body>
-    <form method="GET" action="config2.php">
+    <form method="GET" action="ficha.php">
         <div class="buscar">
             <input class="cpf_busca" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
             <button class="busca">Buscar</button>
+            <?php
+            //if(!isset($_GET['busca'])){
+            //}
+            if($sql_query->num_rows==0){
+            ?>
+                <p>Nenhum resultado encontrado, digite um valor valido</p>  
+            <?php
+            } else{
+                while($dados = $sql_query->fetch_assoc()){
+                    ?>
+                        <div class="teste_pesquisa">
+                            <p class="teste"><?php echo $dados['cpf']?></p>
+                            <p class="teste"><?php echo $dados['nome']?></p>
+                        </div>
+
+                    <?php
+                }
+            }  
+
+            ?>
         </div>
         <fieldset class="box">
             <legend><b>Ficha Paciente</b></legend>

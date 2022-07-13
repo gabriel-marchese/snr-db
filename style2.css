@@ -21,6 +21,11 @@ h2{
     margin: 3em auto;
 }
 
+.teste_pesquisa{
+    display: flex;
+    background-color: #E1ADDC;
+}
+
 .box{
     display: flex;
     flex-flow: column wrap;
