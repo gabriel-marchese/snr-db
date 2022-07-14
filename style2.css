@@ -23,7 +23,8 @@ h2{
 
 .teste_pesquisa{
     display: flex;
-    background-color: #E1ADDC;
+    flex-flow: column wrap;
+    justify-content: space-between;
 }
 
 .box{
