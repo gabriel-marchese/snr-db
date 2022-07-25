@@ -1,3 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha Paciente</title>
+    <link rel="stylesheet" href="style2.css">   
+</head>
 <?php
 
     include('config.php');
@@ -9,17 +20,6 @@
     
 
 ?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha Paciente</title>
-    <link rel="stylesheet" href="style2.css">   
-</head>
-
 <body>
     <form method="GET" action="ficha.php">
         <div class="buscar">
@@ -35,16 +35,6 @@
             } else{
                 while($dados = $sql_query->fetch_assoc()){
                     ?>
-                        <div class="teste_pesquisa">
-                            <p class="teste"><?php echo $dados['cpf']?></p>
-                            <p class="teste"><?php echo $dados['nome']?></p>
-                        </div>
-
-                    <?php
-                }
-            }  
-
-            ?>
         </div>
         <fieldset class="box">
             <legend><b>Ficha Paciente</b></legend>
@@ -53,15 +43,22 @@
                     <img src="foto.jpeg" alt="foto paciente">
                 </div>
                 <div class="name">
-                    <h2>Gabriel de Oliveira Marchese</h2>
-                    <p>CPF:529.562.168.56</p>
+                    <h2><?php echo $dados['nome']?></h2>
+                    <p>CPF: <?php echo $dados['cpf']?></p>
+                    <p>Email: <?php echo $dados['email']?></p>
                 </div>
             </div>
             <div class="dados">
-
+                    <p></p>
+                    <p></p>
             </div>
         </fieldset>
     </form>
+    <?php
+                }
+            }  
+
+            ?>
 </body>
 
 </html>
