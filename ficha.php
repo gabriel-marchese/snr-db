@@ -23,7 +23,7 @@
 <body>
     <form method="GET" action="ficha.php">
         <div class="buscar">
-            <input class="cpf_busca" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
+            <input class="cpf_busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca'];?>" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
             <button class="busca">Buscar</button>
             <?php
             //if(!isset($_GET['busca'])){
