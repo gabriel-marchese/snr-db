@@ -34,3 +34,19 @@ legend{
     border-radius: 8px;
 }
 
+.header{
+    display: grid;
+    flex-flow: column wrap;
+    grid-template-columns: 0.4fr 2fr;
+}
+
+.foto img{
+    height: 15%;
+    padding: 30px;
+}
+
+.name{
+    display: flex;
+    justify-content: space-around;
+    padding: 60px;
+}
