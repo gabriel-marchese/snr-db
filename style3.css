@@ -1,21 +1,42 @@
+
 .box{
-    display: block;
+    margin: 150px;
 }
-
-
 .header{
     display: grid;
     flex-flow: column wrap;
     grid-template-columns: 0.4fr 2fr;
 }
 
+h2{
+    justify-content: center;
+    display: grid;
+    flex-flow: column wrap;
+}
+
+.buscar{
+    display: flex;
+    justify-content: center;
+}
+
 .foto img{
     height: 15%;
     padding: 30px;
+    position: absolute;
 }
 
 .name{
     display: flex;
     justify-content: space-around;
     padding: 60px;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-around;
+}
+
+p{
+    font-size: 25px;
+    margin: 1px solid gray;
 }

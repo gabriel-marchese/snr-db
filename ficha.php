@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha Paciente</title>
-    <link rel="stylesheet" href="style2.css">   
+    <link rel="stylesheet" href="style3.css">   
 </head>
 <?php
 
@@ -44,14 +44,29 @@
                 </div>
                 <div class="name">
                     <h2><?php echo $dados['nome']?></h2>
-                    <p>CPF: <?php echo $dados['cpf']?></p>
-                    <p>Email: <?php echo $dados['email']?></p>
                 </div>
             </div>
             <div class="dados">
-                    <p></p>
-                    <p></p>
+                    <p>CPF: <?php echo $dados['cpf']?></p>
+                    <p>Email: <?php echo $dados['email']?></p>
+                </div>
+            <br>
+            <br>
+            <div class="dados">
+                <p>Telefone: <?php echo $dados['telefone']?></p>
+                <p>Sexo: <?php echo $dados['sexo']?></p>
+                <p>Peso: <?php echo $dados['peso']?></p>
             </div>
+            <br>
+            <br>
+            <div class="dados">
+                <p>Oxigenação:<?php echo $dados['oxigenacao']?></p>
+                <p>Saturação::<?php echo $dados['saturacao']?></p>
+                <p>Temperatura: <?php echo $dados['temperatura']?></p>
+            </div>
+            <br>
+            <br>
+           
         </fieldset>
     </form>
     <?php
