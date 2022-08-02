@@ -16,7 +16,10 @@ h2{
 
 .buscar{
     display: flex;
-    justify-content: center;
+    flex-flow: column wrap;
+    max-width: 1000px;
+    padding: 0 30em;
+    margin: 3em auto;
 }
 
 .foto img{

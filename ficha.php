@@ -40,7 +40,7 @@
             <legend><b>Ficha Paciente</b></legend>
             <div class="header">
                 <div class="foto">
-                    <img src="foto.jpeg" alt="foto paciente">
+                    <img src="foto.png" alt="foto paciente">
                 </div>
                 <div class="name">
                     <h2><?php echo $dados['nome']?></h2>
