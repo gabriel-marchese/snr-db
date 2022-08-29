@@ -1,45 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style3.css">
-    <title>Document</title>
+    <title>Ficha Paciente</title>
+    <link rel="stylesheet" href="style3.css">   
 </head>
-<body>
-    <fieldset class="box">
-        <legend><b>Ficha Paciente</b></legend>
-        <div class="header">
-            <div class="foto">
-                <img src="foto.jpeg" alt="foto paciente">
-            </div>
-            <div class="name">
-                <h2>Teste</h2>
-                <p>Teste</p>
-                <p>Teste</p>
-            </div>
-        </div>
-        <div class="dados">
-                <p>Email: dhahdashuidhusiadha@gmail.com</p>
-                <p>Idade: 13</p>
-                <p>Altura: 1,24</p>
-        </div>
-        <br>
-        <br>
-        <div class="dados">
-            <p>Oxigenação: xxxx</p>
-            <p>Saturação:: xxxx</p>
-            <p>Peso: xxx</p>
 
+<body>
+    <form method="GET" action="ficha.php">
+        <div class="buscar">
+            <input class="cpf_busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca'];?>" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
+            <button class="busca">Buscar</button>
+        
         </div>
-        <br>
-        <br>
-        <div class="dados">
-            <p>Teste: xxxxx</p>
-            <p>Teste: xxxxx</p>
-            <p>Teste: xxxxx</p>
-        </div>
-    </fieldset>
+        <fieldset class="box">
+            <legend><b>Ficha Paciente</b></legend>
+            <div class="header">
+                    <h2>Brenda Matos</h2>
+            </div>
+            <br>
+            <br>
+            <div class="dados">
+                    <p>CPF: <span class="db-text">111.222.333-44</span></p>
+                    <p>Email: <span class="db-text">brendasmatos89@gmail.com</span></p>
+                </div>
+            <br>
+            <br>
+            <div class="dados">
+                <p>Telefone: <span class="db-text">(11)91234-1234</span></p>
+                <p>Sexo: <span class="db-text">Feminino</span></p>
+                <p>Peso: <span class="db-text">50</span></p>
+            </div>
+            <br>
+            <br>
+            <div class="dados">
+                <p>Oxigenação: <span class="db-text">43</span></p>
+                <p>Saturação: <span class="db-text">12</span></p>
+                <p>Temperatura: <span class="db-text">34</span></p>
+            </div>
+            <br>
+            <br>
+           
+        </fieldset>
+    </form>
+  
 </body>
+
 </html>

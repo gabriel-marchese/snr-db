@@ -47,22 +47,22 @@
                 </div>
             </div>
             <div class="dados">
-                    <p>CPF: <span class="db-"><?php echo $dados['cpf']?></span></p>
-                    <p>Email: <span><?php echo $dados['email']?></span></p>
+                    <p>CPF: <span class="db-text"><?php echo $dados['cpf']?></span></p>
+                    <p>Email: <span class="db-text"><?php echo $dados['email']?></span></p>
                 </div>
             <br>
             <br>
             <div class="dados">
-                <p>Telefone: <span><?php echo $dados['telefone']?></span></p>
-                <p>Sexo: <span><?php echo $dados['sexo']?></span></p>
-                <p>Peso: <span><?php echo $dados['peso']?></span></p>
+                <p>Telefone: <span class="db-text"><?php echo $dados['telefone']?></span></p>
+                <p>Sexo: <span class="db-text"><?php echo $dados['sexo']?></span></p>
+                <p>Peso: <span class="db-text"><?php echo $dados['peso']?></span></p>
             </div>
             <br>
             <br>
             <div class="dados">
-                <p>Oxigenação: <span><?php echo $dados['oxigenacao']?></span></p>
-                <p>Saturação: <span><?php echo $dados['saturacao']?></span></p>
-                <p>Temperatura: <span><?php echo $dados['temperatura']?></span></p>
+                <p>Oxigenação: <span class="db-text"><?php echo $dados['oxigenacao']?></span></p>
+                <p>Saturação: <span class="db-text"><?php echo $dados['saturacao']?></span></p>
+                <p>Temperatura: <span class="db-text"><?php echo $dados['temperatura']?></span></p>
             </div>
             <br>
             <br>
