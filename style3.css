@@ -41,5 +41,9 @@ h2{
 
 p{
     font-size: 25px;
-    margin: 1px solid gray;
+    border: 1px solid gray;
+}
+
+*{
+    background-color: azure;
 }

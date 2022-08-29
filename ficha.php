@@ -47,22 +47,22 @@
                 </div>
             </div>
             <div class="dados">
-                    <p>CPF: <?php echo $dados['cpf']?></p>
-                    <p>Email: <?php echo $dados['email']?></p>
+                    <p>CPF: <span class="db-"><?php echo $dados['cpf']?></span></p>
+                    <p>Email: <span><?php echo $dados['email']?></span></p>
                 </div>
             <br>
             <br>
             <div class="dados">
-                <p>Telefone: <?php echo $dados['telefone']?></p>
-                <p>Sexo: <?php echo $dados['sexo']?></p>
-                <p>Peso: <?php echo $dados['peso']?></p>
+                <p>Telefone: <span><?php echo $dados['telefone']?></span></p>
+                <p>Sexo: <span><?php echo $dados['sexo']?></span></p>
+                <p>Peso: <span><?php echo $dados['peso']?></span></p>
             </div>
             <br>
             <br>
             <div class="dados">
-                <p>Oxigenação:<?php echo $dados['oxigenacao']?></p>
-                <p>Saturação::<?php echo $dados['saturacao']?></p>
-                <p>Temperatura: <?php echo $dados['temperatura']?></p>
+                <p>Oxigenação: <span><?php echo $dados['oxigenacao']?></span></p>
+                <p>Saturação: <span><?php echo $dados['saturacao']?></span></p>
+                <p>Temperatura: <span><?php echo $dados['temperatura']?></span></p>
             </div>
             <br>
             <br>
