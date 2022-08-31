@@ -1,33 +1,38 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-image: linear-gradient(to bottom, rgb(212, 239, 255), rgb(0, 138, 202));
+    background-image: linear-gradient(to bottom, rgb(166, 224, 255), rgb(227, 254, 255));
     height: 2000px;
 
 }
 
 .box{
-    width: 40%;
     display: block;
     flex-flow: column wrap;
     margin: auto;
 }
 
 fieldset{
-    border: 3px solid rgb(42, 46, 44);
+    border: 5px solid rgb(22, 47, 71);
     border-radius: 15px;
     
 }
 
 legend{
-    border: 1px solid rgb(0, 21, 43);
+    border: 1px solid rgb(22, 47, 71);
     padding: 10px;
-    background-color: rgb(212, 234, 255);
+    background-color: rgb(22, 47, 71);
     border-radius: 8px;
     font-size: 19px;
+    
+}
+
+legend > b{
+    color: white;
 }
 
 .header{
     align-items: center;
+    color: black;
 }
 
 h2{
@@ -65,10 +70,33 @@ h2{
 }
 
 p{
-    color: rgb(0, 80, 126);
+    color: rgb(0, 69, 134);
     font-weight: bold;
     font-size: 25px;
     border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+.fundo{
+    background-color: rgb(212, 234, 255);
+    width: 50%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 35px;
+}
+
+.lado-esquerda{
+    padding: 20px;
+}
+
+.lado-direito{
+    padding: 20px;
+}
+
+.ficha-box{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Barra de Pesquisa*/
@@ -96,17 +124,33 @@ p{
     font-size: 17px;
 }
 
-section{
-    display: block;
+/* Parte escondida*/
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.history{
+    display: flex;
     margin: auto;
+}
+
+i{
+    color: black;
+    margin: 0px auto;
+    font-size: 30px;
     align-items: center;
     justify-content: center;
 }
 
-
-i{
-    color: black;
+button{
     margin: auto;
-    font-size: 30px;
-    align-items: center;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(0, 69, 134) ;
+    color: white;
+    letter-spacing: 1.5px;
+
 }

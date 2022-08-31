@@ -6,52 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ficha Paciente</title>
-    <link rel="stylesheet" href="style3.css">   
+    <link rel="stylesheet" href="style3.css">
+    <script defer src="scripts.js"></script>
 </head>
 
 <body>
-    <form method="GET" action="ficha.php">
-        <div class="buscar">
-            <input class="cpf_busca" value="<?php if(isset($_GET['busca'])) echo $_GET['busca'];?>" type="text" name="busca" size="50" placeholder="Insira o cpf para pesquisar">
-            <button class="busca">Buscar</button>
-        
+    
+
+</div>
+<div class="fundo">
+    <fieldset class="box">
+        <legend><b>Ficha Paciente</b></legend>
+        <div class="header">
+            <h2>Brenda Matos</h2>
         </div>
-        <fieldset class="box">
-            <legend><b>Ficha Paciente</b></legend>
-            <div class="header">
-                    <h2>Brenda Matos</h2>
-            </div>
-            <br>
-            <br>
-            <div class="dados">
+        <br>
+        <br>
+        <section class="ficha-box">
+            <div class="lado-esquerda">
+                <div class="dados">
                     <p>CPF: <span class="db-text">111.222.333-44</span></p>
                     <p>Email: <span class="db-text">brendasmatos89@gmail.com</span></p>
                 </div>
-            <br>
-            <br>
-            <div class="dados">
-                <p>Telefone: <span class="db-text">(11)91234-1234</span></p>
-                <p>Sexo: <span class="db-text">Feminino</span></p>
-                <p>Peso: <span class="db-text">50</span></p>
+                <br>
+                <br>
+                <div class="dados">
+                    <p>Telefone: <span class="db-text">(11)91234-1234</span></p>
+                    <p>Sexo: <span class="db-text">Feminino</span></p>
+                    <p>Peso: <span class="db-text">50</span></p>
+                </div>
+                <br>
+                <br>
+                <div class="dados">
+                    <p>Oxigenação: <span class="db-text">43</span></p>
+                    <p>Saturação: <span class="db-text">12</span></p>
+                    <p>Temperatura: <span class="db-text">34</span></p>
+                </div>
+                <br>
+                <br>
             </div>
-            <br>
-            <br>
-            <div class="dados">
-                <p>Oxigenação: <span class="db-text">43</span></p>
-                <p>Saturação: <span class="db-text">12</span></p>
-                <p>Temperatura: <span class="db-text">34</span></p>
+            <div class="lado-direito">
+                <div class="dados">
+                    <p>Nome Responsavel: <span class="db-text">Gabriel Marchese</span></p>
+                    <p>CPF do Responsavel: <span class="db-text">123.123.123-45</span></p>
+                </div>
+                <br>
+                <br>
+                <div class="dados">
+                    <p>Idade: <span class="db-text">22</span></p>
+                    <p>Plano de Saúde: <span class="db-text">Sim</span></p>
+                    <p>Convénio: <span class="db-text">Sim</span></p>
+                </div>
+                <br>
+                <br>
+                <div class="dados">
+                    <p>Altura: <span class="db-text">1.578</span></p>
+                    <p>Pressão: <span class="db-text">12/8</span></p>
+                    <p>Tipo do Sangue: <span class="db-text">A+</span></p>
+                </div>
+                <br>
+                <br>
             </div>
-            <br>
-            <br>
-           
-        </fieldset>
-        <section >
-            <i class="uil uil-angle-double-down">↡</i>
-
-
         </section>
-    </form>
-  
+        <div class="content">
+            <button class="show/hidden">Histórico Médico</button>
+        </div>
+        <section class="history">
+            <section class="ficha-box">
+                <div class="lado-esquerda">
+                    <br>
+                    <div class="dados">
+                        <p>Médico Responsavel: <span class="db-text">Jorge</span></p>
+                        <p>Data da Consulta: <span class="db-text">03/06/2020</span></p>
+                    </div>
+                    <br>
+                    <div class="dados">
+                        <p>Motivo: <span class="db-text">Dor de Cabeça</span></p>
+                        <p>Tratamento: <span class="db-text">Dipirona</span></p>
+                    </div>
+                    <br>
+                </div>
+                <div class="lado-direito">
+                    <br>
+                    <div class="dados">
+                        <p>Tipo: <span class="db-text">Particular</span></p>
+                        <p>Internação <span class="db-text">3 Dias</span></p>
+                    </div>
+                    <br>
+
+                    <div class="dados">
+                        <p>Tempo de Tratamento: <span class="db-text">10 Dias</span></p>
+                        <p>Outros: <span class="db-text">Sim</span></p>
+                    </div>
+                    <br>
+                </div>
+            </section>
+        </section>
+    </fieldset>
+</div>
 </body>
 
 </html>
