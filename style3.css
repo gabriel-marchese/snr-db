@@ -79,7 +79,7 @@ p{
 .fundo{
     background-color: rgb(212, 234, 255);
     width: 50%;
-    margin: auto;
+    margin: 4em auto;
     padding: 25px;
     border-radius: 35px;
 }
