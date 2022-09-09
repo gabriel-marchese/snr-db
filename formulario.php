@@ -18,14 +18,15 @@
         $cpf = $_POST['cpf'];
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
-        $temperatura = $_POST['altura'];
+        $NomeResp = $_POST['NomeResp'];
+        $altura = $_POST['altura'];
         $peso = $_POST['peso']; 
         $oxigenacao = $_POST['oxigenacao'];
         $saturacao = $_POST['saturacao'];
         $sexo = $_POST['sexo'];
         
 
-        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,altura,peso,oxigenacao,saturacao,sexo) VALUES('$nome','$cpf','$email','$telefone','$temperatura','$peso','$oxigenacao','$saturacao','$sexo')");
+        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,NomeResp,altura,peso,oxigenacao,saturacao,sexo) VALUES('$nome','$cpf','$email','$telefone','$NomeResp','$','$peso','$oxigenacao','$saturacao','$sexo')");
     }
 
 ?>
@@ -65,8 +66,8 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="temperatura" id="temperatura" class="inputUser" required>
-                    <label for="temperatura" class="labelInput">Temperatura</label>
+                    <input type="text" name="NomeResp" id="NomeResp" class="inputUser" required>
+                    <label for="NomeResp" class="labelInput">Nome do Responsável</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
