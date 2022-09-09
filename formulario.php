@@ -19,14 +19,14 @@
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $NomeResp = $_POST['NomeResp'];
-        $altura = $_POST['altura'];
-        $peso = $_POST['peso']; 
-        $oxigenacao = $_POST['oxigenacao'];
+        $altura = $_POST['CPFResp'];
+        $peso = $_POST['Idade']; 
+        $oxigenacao = $_POST['PlanoSaude'];
         $saturacao = $_POST['saturacao'];
         $sexo = $_POST['sexo'];
         
 
-        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,NomeResp,altura,peso,oxigenacao,saturacao,sexo) VALUES('$nome','$cpf','$email','$telefone','$NomeResp','$','$peso','$oxigenacao','$saturacao','$sexo')");
+        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,NomeResp,CPFResp,Idade,PlanoSaude,saturacao,sexo) VALUES('$nome','$cpf','$email','$telefone','$NomeResp','$CPFResp','$Idade','$PlanoSaude','$saturacao','$sexo')");
     }
 
 ?>
@@ -71,18 +71,18 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="altura" id="altura" class="inputUser" required>
-                    <label for="altura" class="labelInput">Altura</label>
+                    <input type="text" name="CPFResp" id="CPFResp" class="inputUser" required>
+                    <label for="CPFResp" class="labelInput">CPF do Responsável</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="peso" id="peso" class="inputUser" required>
-                    <label for="peso" class="labelInput">Peso</label>
+                    <input type="text" name="Idade" id="Idade" class="inputUser" required>
+                    <label for="Idade" class="labelInput">Idade</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="oxigenacao" id="oxigenacao" class="inputUser" required>
-                    <label for="oxigenacao" class="labelInput">Oxigenação</label>
+                    <input type="text" name="PlanoSaude" id="PlanoSaude" class="inputUser" required>
+                    <label for="PlanoSaude" class="labelInput">Plano de Saúde</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
