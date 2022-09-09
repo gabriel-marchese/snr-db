@@ -19,14 +19,15 @@
         $email = $_POST['email'];
         $telefone = $_POST['telefone'];
         $NomeResp = $_POST['NomeResp'];
-        $altura = $_POST['CPFResp'];
-        $peso = $_POST['Idade']; 
-        $oxigenacao = $_POST['PlanoSaude'];
-        $saturacao = $_POST['saturacao'];
+        $CPFResp = $_POST['CPFResp'];
+        $Idade = $_POST['Idade']; 
+        $PlanoSaude = $_POST['PlanoSaude'];
+        $Convenio = $_POST['Convenio'];
         $sexo = $_POST['sexo'];
+        $TipoSangue = $_POST['TipoSangue'];
         
 
-        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,NomeResp,CPFResp,Idade,PlanoSaude,saturacao,sexo) VALUES('$nome','$cpf','$email','$telefone','$NomeResp','$CPFResp','$Idade','$PlanoSaude','$saturacao','$sexo')");
+        $result = mysqli_query($conexao,"INSERT INTO pacientes(nome,cpf,email,telefone,NomeResp,CPFResp,Idade,PlanoSaude,Convenio,sexo,TipoSangue) VALUES('$nome','$cpf','$email','$telefone','$NomeResp','$CPFResp','$Idade','$PlanoSaude','$Convenio','$sexo','$TipoSangue')");
     }
 
 ?>
@@ -86,15 +87,19 @@
                 </div>
                 <br><br>
                 <div class="inputBox">
-                    <input type="text" name="saturacao" id="saturacao" class="inputUser" required>
-                    <label for="saturacao" class="labelInput">Saturação</label>
+                    <input type="text" name="Convenio" id="Convenio" class="inputUser" required>
+                    <label for="Convenio" class="labelInput">Convenio</label>
                 </div>
                 <br><br>
                 <div class="inputBox">
                     <input type="text" name="sexo" id="sexo" class="inputUser" required>
                     <label for="sexo" class="labelInput">Sexo</label>
                 </div>
-
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="TipoSangue" id="TipoSangue" class="inputUser" required>
+                    <label for="TipoSangue" class="labelInput">Tipo Sanguíneo</label>
+                </div>
                 <br><br>
                 <input type="submit" name="submit" id="submit">
             </fieldset>
