@@ -1,9 +1,9 @@
 <?php
 
     $dbHost = 'sql10.freemysqlhosting.net';
-    $dbUsername = 'sql10519120';
-    $dbPassword = 'zlJFBLDMQB';
-    $dbName = 'sql10519120';
+    $dbUsername = 'sql10527793';
+    $dbPassword = 'eUASEUkdpk';
+    $dbName = 'sql10527793';
 
     $conexao = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 

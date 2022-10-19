@@ -1,17 +1,7 @@
 <?php
 
     if(isset($_POST['submit'])){
-        //print_r($_POST['nome']);
-        //print_r($_POST['cpf']);
-        //print_r($_POST['email']);
-        //print_r($_POST['telefone']);
-        //print_r($_POST['temperatura']);
-        //print_r($_POST['altura']);
-        //print_r($_POST['peso']);
-        //print_r($_POST['oxigenacao']);
-        //print_r($_POST['saturacao']);
-        //print_r($_POST['sexo']);
-
+        
         include_once('config.php');
 
         $nome = $_POST['nome'];
