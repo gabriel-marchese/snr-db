@@ -64,11 +64,8 @@
                 </div>
                 <br>
                 <br>
-                <div class="dados">
-                    <p>Oxigenação: <span class="db-text"><?php echo $dados['oxigenacao']?></span></p>
-                    <p>Saturação: <span class="db-text"><?php echo $dados['saturacao']?></span></p>
-                    <p>Temperatura: <span class="db-text"><?php echo $dados['temperatura']?></span></p>
-                </div>
+                <br>
+                <br>
                 <br>
                 <br>
             </div>
@@ -86,15 +83,32 @@
                 </div>
                 <br>
                 <br>
-                <div class="dados">
-                    <p>Altura: <span class="db-text"><?php echo $dados['altura']?></span></p>
-                    <p>Pressão: <span class="db-text"><?php echo $dados['Pressao']?></span></p>
-                    <p>Tipo do Sangue: <span class="db-text"><?php echo $dados['TipoSangue']?></span></p>
-                </div>
+                <br>
+                <br>
                 <br>
                 <br>
             </div>
         </section>
+
+        <div class="solo">
+            <p>Temperatura: <span class="db-text"><?php echo $dados['temperatura']?></span></p>
+        </div>
+        
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>            
+
+
         <div class="content">
             <button class="show/hidden">Histórico Médico</button>
         </div>
